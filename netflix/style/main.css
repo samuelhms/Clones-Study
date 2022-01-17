@@ -1,0 +1,133 @@
+:root{
+    --vermelho:#E50914;
+    --preta:#141414;
+    --princi: 400px;
+
+}
+html{scroll-behavior:smooth}
+a{
+    text-decoration: none;
+}
+
+*{
+    text-decoration: none;
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+/*Base*/
+body{
+    text-decoration: none;
+    background: var(--preta);
+    font-family:'Times New Roman', Times, serif;
+    color: white;
+    
+}
+::-webkit-scrollbar {
+    display: none;
+}
+
+header .container{
+    
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+}
+header .logo{
+    color: var(--vermelho);
+    font-family:"Arial Black", Helvetica, sans-serif;
+    font-size: 40px;
+    
+}
+header nav a{
+    text-decoration: none;
+    color: #AAA;
+    margin-right: 20px;
+    font-family:'Lucida Sans Unicode', Helvetica, sans-serif;
+}
+header nav a:hover{
+    text-decoration: none;
+    color: #FFF;
+    margin-right: 20px;
+}
+/*Filme Principal*/
+.filme-principal{
+    
+    font-size: 16px;
+    background: linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)100%), url("/img/capa-house.jpg");
+    
+    height: 600px;
+    background-size: cover;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+
+}
+div .filme-principal:hover{
+    height: 600px;
+    transition: .6s ease all;
+}
+
+.filme-principal .description{
+    
+    margin-top: 10px;
+    margin-bottom: 40px;
+}
+.filme-principal .container{
+    
+    width: 70%;
+}
+.titulo {
+    margin-top: 10%;
+    font-size: 40px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.botao{
+    background-color: rgba(0,0,0,.50);
+    border: none;
+    color: white;
+
+    padding: 15px 30px;
+    margin-right: 15px;
+    font-size: 12px;
+
+    cursor: pointer;
+    transition: .8s ease all;
+}
+.botao:hover{
+    background-color: white;
+    color: black;
+    
+}
+.botao i{
+    margin-right: 8px;
+}
+
+.container {
+    margin-left: 20px;
+    max-width: 95%;
+    
+}
+
+.box-filme .item{
+    height: 98%;
+    width: 98%;
+
+}
+.box-filme .item img:hover{
+    
+    width: 98%;
+}
+.carousel-filmes{
+    margin-top: 30px;
+    margin-bottom: 30;
+    
+}
+.carousel-filmes .item:hover{
+    cursor: pointer;
+}
+
